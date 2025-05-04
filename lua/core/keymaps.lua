@@ -23,3 +23,5 @@ set("x", "<leader>p", "\"_dP");
 set("n", "<leader>rh", "<cmd>botright new | :terminal<cr>i");
 set("n", "<leader>rs", "<cmd>botright vnew | :terminal<cr>i");
 set("t", "<esc>", "<c-\\><c-n>");
+
+set("n", "gn", "<cmd>bnext<cr>");
