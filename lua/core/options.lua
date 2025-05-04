@@ -10,3 +10,5 @@ opt.shiftwidth = 4;
 opt.number = true;
 opt.relativenumber = true;
 opt.numberwidth = 1;
+
+opt.cursorline = true;
