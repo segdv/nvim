@@ -28,3 +28,6 @@ set("n", "gn", "<cmd>bnext<cr>");
 
 set("x", "<leader>y", "\"+y");
 set("n", "<leader>y", "\"+y");
+
+set("n", "<leader>CH", require("core.highlight").hide_cursor);
+set("n", "<leader>CR", require("core.highlight").show_cursor);
