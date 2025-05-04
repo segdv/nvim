@@ -16,3 +16,6 @@ opt.cursorline = true;
 opt.ignorecase = true;
 opt.smartcase = true;
 opt.hlsearch = false;
+
+opt.scrolloff = 7;
+opt.lazyredraw = true;
