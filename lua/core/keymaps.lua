@@ -12,3 +12,5 @@ set("n", "<leader>h", "<c-w>h");
 set("n", "<leader>t", "<c-w>j");
 set("n", "<leader>n", "<c-w>k");
 set("n", "<leader>s", "<c-w>l");
+
+set("n", "<leader>u", "<cmd>Ex<cr>");
