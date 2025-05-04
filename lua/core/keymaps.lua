@@ -14,3 +14,6 @@ set("n", "<leader>n", "<c-w>k");
 set("n", "<leader>s", "<c-w>l");
 
 set("n", "<leader>u", "<cmd>Ex<cr>");
+
+set("v", "J", ":m '>+1<cr>gv=gv");
+set("v", "K", ":m '<-2<cr>gv=gv");
