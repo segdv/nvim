@@ -25,3 +25,6 @@ set("n", "<leader>rs", "<cmd>botright vnew | :terminal<cr>i");
 set("t", "<esc>", "<c-\\><c-n>");
 
 set("n", "gn", "<cmd>bnext<cr>");
+
+set("x", "<leader>y", "\"+y");
+set("n", "<leader>y", "\"+y");
