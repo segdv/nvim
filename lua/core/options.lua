@@ -12,3 +12,7 @@ opt.relativenumber = true;
 opt.numberwidth = 1;
 
 opt.cursorline = true;
+
+opt.ignorecase = true;
+opt.smartcase = true;
+opt.hlsearch = false;
