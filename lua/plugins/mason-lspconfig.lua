@@ -9,7 +9,7 @@ return {
 
   config = function()
     require("mason-lspconfig").setup({
-      ensure_installed = {},
+      ensure_installed = { "jdtls" },
       automatic_installation = true,
     });
 
@@ -18,6 +18,24 @@ return {
         require("lspconfig")[server_name].setup({
           capabilities = require("lsp.capabilities"),
           on_attach = require("lsp.on-attach"),
+        });
+      end,
+
+      ["jdtls"] = function()
+        require("lspconfig").jdtls.setup({
+          capabilities = require("lsp.capabilities"),
+          on_attach = require("lsp.on-attach"),
+
+          settings = {
+            java = {
+              format = {
+                settings = {
+                  url = "~/.config/nvim/codestyles/java.xml",
+                  profile = "Default",
+                },
+              },
+            },
+          },
         });
       end,
     });
