@@ -22,5 +22,8 @@ require("lazy").setup({
   spec = {
     { import = "plugins" },
   },
+  install = {
+    colorscheme = { "github_dark_high_contrast", "default" },
+  },
   checker = { enabled = true },
 })
