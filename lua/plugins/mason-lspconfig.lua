@@ -17,6 +17,7 @@ return {
       function(server_name)
         require("lspconfig")[server_name].setup({
           capabilities = require("lsp.capabilities"),
+          on_attach = require("lsp.on-attach"),
         });
       end,
     });

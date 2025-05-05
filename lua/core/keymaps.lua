@@ -2,6 +2,12 @@ vim.g.mapleader = " ";
 vim.g.maplocalleader = "\\";
 
 local set = vim.keymap.set;
+local del = vim.keymap.del;
+
+del("n", "gra");
+del("n", "gri");
+del("n", "grn");
+del("n", "grr");
 
 set("n", "<leader>;", "$a;<Esc>");
 set("n", "<leader>w", "<cmd>w<cr>");
