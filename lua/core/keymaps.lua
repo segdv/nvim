@@ -37,3 +37,5 @@ set("n", "<leader>y", "\"+y");
 
 set("n", "<leader>CH", require("core.highlight").hide_cursor);
 set("n", "<leader>CR", require("core.highlight").show_cursor);
+
+set("n", "<leader>R", require("core.commands.run"));
