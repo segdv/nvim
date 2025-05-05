@@ -6,7 +6,7 @@ return {
   config = function()
     vim.cmd("colorscheme github_dark_high_contrast");
 
-    for _, name in ipairs({ "Normal", "NormalNC", "NonText" }) do
+    for _, name in ipairs({ "Normal", "NormalNC", "NormalFloat", "NonText" }) do
       vim.api.nvim_set_hl(0, name, { bg = "none" });
     end
   end,
