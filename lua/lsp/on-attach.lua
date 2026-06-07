@@ -3,17 +3,7 @@ return function(_, bufnr)
     vim.keymap.set(mode, lhs, rhs, { noremap = true, silent = true, buffer = bufnr });
   end
 
-  buf_map("n", "gd", function()
-    vim.lsp.buf.definition({
-      -- Only go to the first definition
-      on_list = function(options)
-        if #options.items > 1 then
-          vim.fn.setqflist(options.items, ' ');
-          vim.cmd('silent cfirst');
-        end
-      end,
-    });
-  end);
+  buf_map("n", "gd", vim.lsp.buf.definition);
 
   buf_map("n", "gi", vim.lsp.buf.implementation);
   buf_map("n", "gr", vim.lsp.buf.references);
