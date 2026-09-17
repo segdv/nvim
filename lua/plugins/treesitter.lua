@@ -1,10 +1,5 @@
 return {
-  "nvim-treesitter/nvim-treesitter",
-  build = ":TSUpdate",
-
-  dependencies = {
-    "nvim-treesitter/nvim-treesitter-context",
-  },
+  "nvim-treesitter/nvim-treesitter-context",
 
   config = function()
     vim.api.nvim_set_hl(0, "TreesitterContextBottom", { underline = true, sp = "#FA9280", bold = true });
